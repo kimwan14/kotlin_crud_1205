@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.kotiln_1205_crud.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class  MainActivity : AppCompatActivity() {
     private val binding : ActivityMainBinding by lazy{
         ActivityMainBinding.inflate(layoutInflater)
     }

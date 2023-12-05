@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/fr1_et_email"
+        android:id="@+id/name"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -31,7 +31,7 @@
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fr1_et_email" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <EditText
         android:id="@+id/age"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/job" />
 
     <Button
-        android:id="@+id/fr1_btn_sign"
+        android:id="@+id/addButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
