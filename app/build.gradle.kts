@@ -7,11 +7,11 @@ plugins {
 
 android {
     namespace = "com.example.kotiln_1205_crud"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.kotiln_1205_crud"
-        minSdk = 31
+        minSdk = 33
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -51,22 +51,21 @@ dependencies {
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
 
     // Room components
-    implementation("androidx.room:room-runtime:2.6.1")
-    kapt("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-    androidTestImplementation("androidx.room:room-testing:2.6.1")
+    val room_version = "2.5.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+    androidTestImplementation("androidx.room:room-testing:$room_version")
 
     // Navigation Component
-    implementation("androidx.navigation:navigation-fragment-ktx:2.2.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.2.2")
-
+    // Kotlin
+    val nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     // Lifecycle components
-    implementation("androidx.lifecycle:lifecycle-extensions:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-common-java8:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    val lifecycle_version = "2.6.2"
+    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
-    // Kotlin components
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72")
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5")
-}
+    }
