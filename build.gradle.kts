@@ -5,3 +5,8 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.6.21" apply false
 
 }
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+}
