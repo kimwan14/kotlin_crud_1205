@@ -12,11 +12,11 @@ interface UserDao {
     @Insert
     suspend fun addUser(userTable:UserTable)
 
-    @Delete
-    suspend fun delectUser(userTable:UserTable)
-
-    @Update
-    suspend fun updateUser(userTable:UserTable)
+//    @Delete
+//    suspend fun deleteUser(userTable:UserTable)
+//
+//    @Update
+//    suspend fun updateUser(userTable:UserTable)
 
     @Query("select * from USER order by id asc")
     fun getAll():LiveData<List<UserTable>>
